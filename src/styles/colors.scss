@@ -1,0 +1,24 @@
+/*
+	Colors
+*/
+
+@mixin colors-generate {
+	@each $color in $color-list {
+		.#{$color} {
+			@if $color == theme {
+				color: $color-theme;
+			} @else {
+				color: $color;
+			}
+		}
+		.bg-#{$color} {
+			@if $color == theme {
+				background: $color-theme;
+			} @else {
+				background: $color;
+			}
+		}
+	}
+}
+
+@include colors-generate;

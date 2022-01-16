@@ -1,0 +1,27 @@
+/*
+	Store variables here
+*/
+
+$color-theme: #4c6ef5;
+$color-theme-fg: rgb(245, 245, 245);
+$font-size: 1rem;
+$color-list: (
+	theme,
+	red,
+	green,
+	lime,
+	purple,
+	orange,
+	gold,
+	yellow,
+	pink,
+	blue,
+	black,
+	white
+);
+$screen-xlg: 99999px;
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xsm: 550px;
+$screen-sizes: (xlg, lg, md, sm, xsm);

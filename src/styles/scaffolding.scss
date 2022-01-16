@@ -1,0 +1,69 @@
+/*
+	General common style
+*/
+
+* {
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+		Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*
+	Setup general styles
+*/
+
+html,
+body,
+#root {
+	background: $color-theme-fg;
+}
+
+html,
+body,
+#root,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: rgb(50, 50, 50);
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	@include transition;
+	text-decoration: none;
+}
+
+p,
+a,
+li,
+button,
+input,
+textarea {
+	font-size: $font-size;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}

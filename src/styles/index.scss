@@ -1,0 +1,24 @@
+/*
+	Import external styles
+*/
+
+@import "./vars.scss";
+@import "./mixins.scss";
+
+/*
+	Import UI styles
+*/
+
+@import "./scaffolding.scss";
+@import "./ctn.scss";
+@import "./btn.scss";
+@import "./prg.scss";
+@import "./colors.scss";
+@import "./grid.scss";
+@import "./mgpd.scss";
+
+/*
+	Import components styles	
+*/
+
+@import "./App.scss";
