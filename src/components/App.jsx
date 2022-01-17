@@ -24,7 +24,7 @@ const App = () => {
 				</p>
 			</div>
 			<div className="ctn-0-20">
-				<button className="btn-alt mr-20">Button 1</button>
+				<button className="btn-alt mr-20">Open modal</button>
 				<button className="btn">Button 2</button>
 			</div>
 			<div className="col-10 col-center p-center bg-hex00000066">
@@ -36,6 +36,9 @@ const App = () => {
 						consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit
 						amet consectetur. Lorem ipsum dolor sit amet consectetur.
 					</p>
+					<div className="row-10 row-center pt-20">
+						<button className="btn-red">Close</button>
+					</div>
 				</div>
 			</div>
 		</>
