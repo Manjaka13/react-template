@@ -99,7 +99,7 @@ textarea {
 // Positioning
 @mixin p-create {
 	position: fixed;
-	z-index: 14;
+	z-index: 15;
 }
 
 .p-center {
@@ -133,4 +133,13 @@ textarea {
 	@include p-create;
 	top: 0;
 	right: 0;
+}
+
+.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.d-none {
+	display: none !important;
 }

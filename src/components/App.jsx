@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTest } from "../hooks";
+import { Modal } from "./UI";
 
 const App = () => {
 	const [status, color] = useTest();
+	const [modalOpened, setModalOpened] = useState(false);
+	const toggleModal = () => setModalOpened(!modalOpened);
 
 	return (
 		<>
@@ -24,23 +27,21 @@ const App = () => {
 				</p>
 			</div>
 			<div className="ctn-0-20">
-				<button className="btn-alt mr-20">Open modal</button>
+				<button className="btn-alt mr-20" onClick={toggleModal}>Open modal</button>
 				<button className="btn">Button 2</button>
 			</div>
-			<div className="col-10 col-center p-center bg-hex00000066">
-				<div className="trans row-5 col-auto ctn-20-20 br-10 bg-white">
-					<h2 className="mb-20">This is a modal !</h2>
-					<p className="prg">
-						Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-						consectetur. Lorem <span className="red">ipsum dolor</span> sit amet
-						consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit
-						amet consectetur. Lorem ipsum dolor sit amet consectetur.
-					</p>
-					<div className="row-10 row-center pt-20">
-						<button className="btn-red">Close</button>
-					</div>
-				</div>
-			</div>
+			<Modal
+				title="This is a modal"
+				opened={modalOpened}
+				atClose={toggleModal}
+			>
+				<p className="prg">
+					Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
+					consectetur. Lorem <span className="red">ipsum dolor</span> sit amet
+					consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit
+					amet consectetur. Lorem ipsum dolor sit amet consectetur.
+				</p>
+			</Modal>
 		</>
 	);
 };
