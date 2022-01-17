@@ -30,10 +30,12 @@ const App = () => {
 			<div className="col-10 col-center p-center bg-hex00000066">
 				<div className="trans row-5 col-auto ctn-20-20 br-10 bg-white">
 					<h2 className="mb-20">This is a modal !</h2>
-					<p className="prg">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-					consectetur. Lorem <span className="red">ipsum dolor</span> sit amet
-					consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit
-					amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
+					<p className="prg">
+						Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
+						consectetur. Lorem <span className="red">ipsum dolor</span> sit amet
+						consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit
+						amet consectetur. Lorem ipsum dolor sit amet consectetur.
+					</p>
 				</div>
 			</div>
 		</>
