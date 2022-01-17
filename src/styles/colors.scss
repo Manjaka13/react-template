@@ -19,6 +19,14 @@
 			}
 		}
 	}
+	@each $color in $color-hex {
+		.hex#{$color} {
+			color: unquote("#" + $color);
+		}
+		.bg-hex#{$color} {
+			background: unquote("#" + $color);
+		}
+	}
 }
 
 @include colors-generate;
