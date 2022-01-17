@@ -1,12 +1,3 @@
 /*
 	App component styles
 */
-
-.modal {
-	@include flexcol(center, center);
-	@include transition;
-
-	&__window {
-		// width: calc(50% - 40px);
-	}
-}
