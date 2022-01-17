@@ -47,18 +47,18 @@ $btn-color-range: 15%;
 		@include btn-active($color);
 	}
 
-	&-#{$color}:hover {
+	&-#{"" + $color}:hover {
 		@include btn-hover($color);
 	}
 
-	&-#{$color}:active {
+	&-#{"" + $color}:active {
 		@include btn-active($color);
 	}
 }
 
 @mixin btn-generate {
 	@each $color in $color-list {
-		.btn-#{$color} {
+		.btn-#{"" + $color} {
 			@include btn-create($color);
 		}
 	}
@@ -115,18 +115,18 @@ $btn-color-range: 15%;
 		@include btn-alt-active($color);
 	}
 
-	&-#{$color}-alt:hover {
+	&-#{"" + $color}-alt:hover {
 		@include btn-alt-hover($color);
 	}
 
-	&-#{$color}-alt:active {
+	&-#{"" + $color}-alt:active {
 		@include btn-alt-active($color);
 	}
 }
 
 @mixin btn-alt-generate {
 	@each $color in $color-list {
-		.btn-#{$color}-alt {
+		.btn-#{"" + $color}-alt {
 			@include btn-alt-create($color);
 		}
 	}

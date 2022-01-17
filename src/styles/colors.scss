@@ -1,17 +1,17 @@
 /*
-	Colors
+	Colors classes
 */
 
 @mixin colors-generate {
 	@each $color in $color-list {
-		.#{$color} {
+		.#{"" + $color} {
 			@if $color == theme {
 				color: $color-theme;
 			} @else {
 				color: $color;
 			}
 		}
-		.bg-#{$color} {
+		.bg-#{"" + $color} {
 			@if $color == theme {
 				background: $color-theme;
 			} @else {
